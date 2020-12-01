@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dasmoto's Arts & Crafts</title>
     <link rel="stylesheet" href="./Resources/CSS/index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+   <div class="content">
     <header class="header">
         <h1>Dasmoto's Arts & Crafts</h1>
         <p>Your #1 resource for quality arts and crafts supplies.</p>        
     </header>
     <nav class="nav_bar">
-        <ul class="nav_list">
-            <li><a href="#home" class="nav_link">Home</a></li>
-            <li><a href="#brushes" class="nav_link">Brushes</a></li>
-            <li><a href="#frames" class="nav_link">Frames</a></li>
-            <li><a href="#paints" class="nav_link">Paints</a></li>
-            <li><a href="#faq" class="nav_link">FAQ</a></li>
-        </ul>
+        <div class="nav_list" id="navbar">
+            <a href="#home" class="nav_link home">Home</a>
+            <a href="#brushes" class="nav_link brushes">Brushes</a>
+            <a href="#frames" class="nav_link frames">Frames</a>
+            <a href="#paints" class="nav_link paints">Paints</a>
+            <a href="#faq" class="nav_link faq">FAQ</a>
+        </div>
     </nav>
     <article class="home_section" id="home">
         <section class="about_us">
             <h3>About us</h3>
-            <p>Dasmoto's Arts and Crafts has been an active member in the local art scene for the last 15 years. We've always strived to provide our community with a welcoming environment to browse, discuss, and purchase arts and crafts supplies. Our knowledgeable staff is always available to offer suggestions and help with any questions you may have. Be sure to check us out next time you're in the area!</p>
+            <p>     Dasmoto's Arts and Crafts has been an active member in the local art scene for the last 15 years. We've always strived to provide our community with a welcoming environment to browse, discuss, and purchase arts and crafts supplies. Our knowledgeable staff is always available to offer suggestions and help with any questions you may have. Be sure to check us out next time you're in the area!</p>
         </section>
     </article>    
     <article class="store" >
@@ -73,5 +76,22 @@
         <li><a href="#">Copywrite 1987</a></li>
       </ul>
     </footer>
+  </div>
+    <script>
+				window.onscroll = function(){myFunction()};
+
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+  		}	 		else {
+    	navbar.classList.remove("sticky");
+  }
+}
+		
+		
+		</script>
 </body>
 </html>

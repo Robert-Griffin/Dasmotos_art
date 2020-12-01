@@ -1,8 +1,12 @@
+
+body{
+		background-image: url(../Pictures/gray-clean-paperboard_95678-95.jpg);
+}
 .header{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../Pictures/tile%20pattern.webp);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125) ), url(../Pictures/tile%20pattern.webp);
   height: 200x;
   background-size: cover;
 }
@@ -22,17 +26,50 @@
 }
 
 .nav_list{
+	position: -webkit-sticky;
+	position: sticky;
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
-  margin: 20px, 0px, 20px, 0px;
-  background-color: aqua;
-  padding: 15px;
+  justify-content:flex-end;
+  background-color: mediumspringgreen;	
 }
 .nav_link{
-  background-color: mediumseagreen;
-  padding: 15px;
-  padding-right: 0
+  padding: 10px 20px;;
   text-decoration: none;
-  font-family:fantasy
+  font-family:fantasy;
+	font-size: 20px;
+	color: white;
+}
+.nav_link.home{
+	margin-right: auto;
+}
+.sticky{
+		position: fixed;
+		top: 0;
+		width: 100%;		
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.about_us h3{
+	background-color: lightcoral;
+	padding: 10px 20px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 20px 0px 0px 0px;
+}
+.about_us p{
+	font-family: 'rOBOTO', cursive;
+	font-weight: 
+}
+#brushes h3{
+	background-color: skyblue;
+	padding: 10px 20px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 20px 0px 0px 0px;
 }
