@@ -1,6 +1,9 @@
 
 body{
-		background-image: url(../Pictures/gray-clean-paperboard_95678-95.jpg);
+  background-image: url(../Pictures/gray-clean-paperboard_95678-95.jpg);
+}
+.body{
+  margin: 5% 25% 0% 25%;
 }
 .header{
   display: flex;
@@ -19,7 +22,7 @@ body{
 }
 .header p{
   text-align: center;
-  font-family: sans-serif;
+  font-family: Tahoma;
   font-weight: bold;
   color: khaki;
   font-size: 25px;
@@ -52,17 +55,18 @@ body{
   padding-top: 60px;
 }
 .about_us h3{
-	background-color: lightcoral;
+	background-color: khaki;
 	padding: 10px 20px;
-	color: white;
+	color: black;
+    text-align: center;
 	font-family: Helvetica;
 	font-size: 32px;
 	font-weight: bold;
 	margin: 20px 0px 0px 0px;
 }
 .about_us p{
-	font-family: 'rOBOTO', cursive;
-	font-weight: 
+	font-family: Tahoma, cursive;
+	font-size: 20px
 }
 #brushes h3{
 	background-color: skyblue;
@@ -72,4 +76,28 @@ body{
 	font-size: 32px;
 	font-weight: bold;
 	margin: 20px 0px 0px 0px;
+}
+.store_item{
+  font-family: Tahoma;
+  font-size: 20px
+}
+.store_item h3{
+	padding: 10px 20px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 20px 0px 0px 0px;
+}
+#brushes h3{
+  background-color: #EF476F;
+  
+}
+#frames h3{
+  background-color: #FFD166;
+  
+}
+#paints h3{
+  background-color: #06D6A0;
+  
 }
